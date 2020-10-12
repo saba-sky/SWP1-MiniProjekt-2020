@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+    <title>Hinzufügen</title>
+</h:head>
+<h:body>
+    <h:outputText value="Unbekannte Teilnehmer*In"
+                  rendered="#{userAddBean.user == null}"/>
+    <h:form rendered="#{userAddBean.user != null}">
+        <h:panelGrid columns="3">
+            <h:outputLabel value="Vorname:"/>
+            <h:inputText id="first-name"
+                         value="#{userAddBean.user.firstName}" required="true"/>
+            <h:message for="first-name"/>
+            <h:outputLabel value="Nachname:"/>
+            <h:inputText id="last-name"
+                         value="#{userAddBean.user.lastName}" required="true"/>
+            <h:message for="last-name"/>
+            <h:outputLabel value="E-Mail:"/>
+            <h:inputText id="email" value="#{userAddBean.user.email}"
+                         binding="#{userAddBean.emailInput}" required="true"/>
+            <h:message for="email"/>
+        </h:panelGrid>
+        <h:commandButton value="Hinzufügen"
+                         action="#{userAddBean.add}"/>
+        <h:button value="Abbrechen" outcome="users.xhtml"/>
+    </h:form>
+</h:body>
+</html>

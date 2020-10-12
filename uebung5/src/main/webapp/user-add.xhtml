@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <title>Hinzufügen einer Teilnehmer*in</title>
+</h:head>
+<h:body>
+    <ui:composition template="WEB-INF/template.xhtml">
+        <ui:define name="content">
+            <p:panel header="Teilnehmer*in hinzufügen">
+                <h:form>
+                    <h:panelGrid columns="3">
+                        <p:outputLabel value="Vorname:" />
+                        <p:inputText id="first-name"
+                                value="#{userAddBean.user.firstName}" />
+                        <p:message for="first-name" />
+
+                        <p:outputLabel value="Nachname:" />
+                        <p:inputText id="last-name"
+                                value="#{userAddBean.user.lastName}" />
+                        <p:message for="last-name" />
+
+                        <p:outputLabel value="E-Mail:" />
+                        <p:inputText id="email" value="#{userAddBean.user.email}"
+                                binding="#{userAddBean.emailInput}" />
+                        <p:message for="email" />
+
+                        <p:outputLabel value="Rolle:" />
+                        <p:selectOneRadio id="role" value="#{userAddBean.user.role}" >
+                            <f:selectItem itemLabel="Veranstalter" itemValue="LECTURER" />
+                            <f:selectItem itemLabel="Tutor" itemValue="TUTOR" />
+                            <f:selectItem itemLabel="Student" itemValue="STUDENT" />
+                        </p:selectOneRadio>
+                        <p:message for="role" />
+
+                        <p:outputLabel value="Passwort:" />
+                        <p:password id="password" value="#{userAddBean.user.password}"
+                                feedback="true" match="passwordcon"
+                                validatorMessage="Die Passwörter stimmen nicht überein" />
+                        <p:message for="password" />
+
+                        <p:outputLabel value="Passwort (Wiederholung):" />
+                        <p:password id="passwordcon" value="#{userAddBean.user.password}"/>
+                        <p:message for="passwordcon" />
+                    </h:panelGrid>
+                    <p:messages globalOnly="true" />
+                    <p:commandButton value="Hinzufügen"
+                            action="#{userAddBean.add}" ajax="false" />
+                    <p:button value="Abbrechen" outcome="users.xhtml" />
+                </h:form>
+            </p:panel>
+        </ui:define>
+    </ui:composition>
+</h:body>
+</html>

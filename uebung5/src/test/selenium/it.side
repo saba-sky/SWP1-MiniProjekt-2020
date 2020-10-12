@@ -1,0 +1,625 @@
+{
+  "id": "f237dd23-d4fa-4f70-a763-a57c257f3ca2",
+  "version": "2.0",
+  "name": "it",
+  "url": "http://localhost:8080/uebung5-1.0/login.xhtml",
+  "tests": [{
+    "id": "3d24dd67-45b5-4c56-a22c-cccebd45802a",
+    "name": "t1",
+    "commands": [{
+      "id": "5c7f75a7-8913-4d93-b6bb-e6d53ba3ea69",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/uebung5-1.0/login.xhtml",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "25e8c4d1-772b-407e-b655-0b4a0b6921a8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x805",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "99a502be-9944-43fb-9bba-82e4df3fb077",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2c5c425-89a8-4a9f-86af-bce86753cce8",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt5:email",
+      "targets": [
+        ["id=j_idt5:email", "id"],
+        ["name=j_idt5:email", "name"],
+        ["css=#j_idt5\\3A email", "css:finder"],
+        ["xpath=//input[@id='j_idt5:email']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt5']/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "193a7455-b3d1-4161-bf88-495079b8e973",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt5:email",
+      "targets": [
+        ["id=j_idt5:email", "id"],
+        ["name=j_idt5:email", "name"],
+        ["css=#j_idt5\\3A email", "css:finder"],
+        ["xpath=//input[@id='j_idt5:email']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt5']/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "a.amadou@uni-bremen.de"
+    }, {
+      "id": "5b3b6826-0b6e-49e4-87be-4752cbe1f8a6",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt5:password",
+      "targets": [
+        ["id=j_idt5:password", "id"],
+        ["name=j_idt5:password", "name"],
+        ["css=#j_idt5\\3Apassword", "css:finder"],
+        ["xpath=//input[@id='j_idt5:password']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt5']/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fcaf39e-0480-48ba-90dd-456440e6e454",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt5:password",
+      "targets": [
+        ["id=j_idt5:password", "id"],
+        ["name=j_idt5:password", "name"],
+        ["css=#j_idt5\\3Apassword", "css:finder"],
+        ["xpath=//input[@id='j_idt5:password']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt5']/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "Amadou"
+    }, {
+      "id": "04389f13-7a3a-4507-a3ea-c3e5bad7edd5",
+      "comment": "",
+      "command": "click",
+      "target": "name=j_idt5:j_idt12",
+      "targets": [
+        ["name=j_idt5:j_idt12", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='j_idt5:j_idt12']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt5']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0339fd6f-4b06-4cca-9830-254041098adc",
+      "comment": "",
+      "command": "click",
+      "target": "css=#form\\3Ausers\\3A 4\\3Aj_idt21 > .ui-cell-editor-output",
+      "targets": [
+        ["css=#form\\3Ausers\\3A 4\\3Aj_idt21 > .ui-cell-editor-output", "css:finder"],
+        ["xpath=//div[@id='form:users:4:j_idt21']/div", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[3]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1727d68-4a74-44c6-bf9b-bd05df1d4085",
+      "comment": "",
+      "command": "click",
+      "target": "id=form:users:4:j_idt23",
+      "targets": [
+        ["id=form:users:4:j_idt23", "id"],
+        ["name=form:users:4:j_idt23", "name"],
+        ["css=#form\\3Ausers\\3A 4\\3Aj_idt23", "css:finder"],
+        ["xpath=//input[@id='form:users:4:j_idt23']", "xpath:attributes"],
+        ["xpath=//div[@id='form:users:4:j_idt21']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[3]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80166fdf-fe8d-4e5b-b106-65d2ee63a562",
+      "comment": "",
+      "command": "type",
+      "target": "id=form:users:4:j_idt23",
+      "targets": [
+        ["id=form:users:4:j_idt23", "id"],
+        ["name=form:users:4:j_idt23", "name"],
+        ["css=#form\\3Ausers\\3A 4\\3Aj_idt23", "css:finder"],
+        ["xpath=//input[@id='form:users:4:j_idt23']", "xpath:attributes"],
+        ["xpath=//div[@id='form:users:4:j_idt21']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[3]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "bernhard.berger@uni-bremen.de"
+    }, {
+      "id": "4c0b3483-f5f7-4df5-92e9-89b9c682c5ff",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=form:users:4:j_idt23",
+      "targets": [
+        ["id=form:users:4:j_idt23", "id"],
+        ["name=form:users:4:j_idt23", "name"],
+        ["css=#form\\3Ausers\\3A 4\\3Aj_idt23", "css:finder"],
+        ["xpath=//input[@id='form:users:4:j_idt23']", "xpath:attributes"],
+        ["xpath=//div[@id='form:users:4:j_idt21']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[3]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "8657539b-24d9-4fd4-8f19-4d0b08872a90",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=form:users:4:j_idt23",
+      "targets": [
+        ["id=form:users:4:j_idt23", "id"],
+        ["name=form:users:4:j_idt23", "name"],
+        ["css=#form\\3Ausers\\3A 4\\3Aj_idt23", "css:finder"],
+        ["xpath=//input[@id='form:users:4:j_idt23']", "xpath:attributes"],
+        ["xpath=//div[@id='form:users:4:j_idt21']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[3]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "f0c0dcdc-4472-45b2-81f8-dd6436e24ac4",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=form:users:4:j_idt23",
+      "targets": [
+        ["id=form:users:4:j_idt23", "id"],
+        ["name=form:users:4:j_idt23", "name"],
+        ["css=#form\\3Ausers\\3A 4\\3Aj_idt23", "css:finder"],
+        ["xpath=//input[@id='form:users:4:j_idt23']", "xpath:attributes"],
+        ["xpath=//div[@id='form:users:4:j_idt21']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[3]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "s_cychgf@uni-bremen.de"
+    }, {
+      "id": "e8be4183-42c1-4eb1-96c2-f037fcdf1222",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=form:users:4:j_idt23",
+      "targets": [
+        ["id=form:users:4:j_idt23", "id"],
+        ["name=form:users:4:j_idt23", "name"],
+        ["css=#form\\3Ausers\\3A 4\\3Aj_idt23", "css:finder"],
+        ["xpath=//input[@id='form:users:4:j_idt23']", "xpath:attributes"],
+        ["xpath=//div[@id='form:users:4:j_idt21']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[3]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ESC}"
+    }]
+  }, {
+    "id": "2a471168-0965-4b43-a370-4269b7cc24c9",
+    "name": "t2",
+    "commands": [{
+      "id": "de869b94-592e-4694-acc9-660bccad8b63",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/uebung5-1.0/login.xhtml",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e3c5c0a5-2424-4167-a085-dc57a60fe137",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1052x807",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "06ea3027-738b-42ca-bf80-f10a2f874fe8",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt5:email",
+      "targets": [
+        ["id=j_idt5:email", "id"],
+        ["name=j_idt5:email", "name"],
+        ["css=#j_idt5\\3A email", "css:finder"],
+        ["xpath=//input[@id='j_idt5:email']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt5']/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78d8702e-122b-414e-8cc7-6b704c5039f9",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt5:email",
+      "targets": [
+        ["id=j_idt5:email", "id"],
+        ["name=j_idt5:email", "name"],
+        ["css=#j_idt5\\3A email", "css:finder"],
+        ["xpath=//input[@id='j_idt5:email']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt5']/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "a.amadou@uni-bremen.de"
+    }, {
+      "id": "0e7fe653-7f5d-4259-ae84-f5e326caa91a",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt5:password",
+      "targets": [
+        ["id=j_idt5:password", "id"],
+        ["name=j_idt5:password", "name"],
+        ["css=#j_idt5\\3Apassword", "css:finder"],
+        ["xpath=//input[@id='j_idt5:password']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt5']/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea996ccd-ec21-45de-b695-b37583fcab18",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt5:password",
+      "targets": [
+        ["id=j_idt5:password", "id"],
+        ["name=j_idt5:password", "name"],
+        ["css=#j_idt5\\3Apassword", "css:finder"],
+        ["xpath=//input[@id='j_idt5:password']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt5']/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "Amadou"
+    }, {
+      "id": "41e322ac-db82-412b-8528-07bddc21f8c7",
+      "comment": "",
+      "command": "click",
+      "target": "name=j_idt5:j_idt12",
+      "targets": [
+        ["name=j_idt5:j_idt12", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='j_idt5:j_idt12']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt5']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e58e3ae-ec9b-4d90-9eb3-013c9a0c74fe",
+      "comment": "",
+      "command": "click",
+      "target": "css=#form\\3Ausers\\3A 4\\3Aj_idt21 > .ui-cell-editor-output",
+      "targets": [
+        ["css=#form\\3Ausers\\3A 4\\3Aj_idt21 > .ui-cell-editor-output", "css:finder"],
+        ["xpath=//div[@id='form:users:4:j_idt21']/div", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[3]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "27e86b44-343d-41c8-a326-8e7c0bd8f868",
+      "comment": "",
+      "command": "type",
+      "target": "id=form:users:4:j_idt23",
+      "targets": [
+        ["id=form:users:4:j_idt23", "id"],
+        ["name=form:users:4:j_idt23", "name"],
+        ["css=#form\\3Ausers\\3A 4\\3Aj_idt23", "css:finder"],
+        ["xpath=//input[@id='form:users:4:j_idt23']", "xpath:attributes"],
+        ["xpath=//div[@id='form:users:4:j_idt21']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[3]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "bernhard.berger@uni-bremen.de"
+    }, {
+      "id": "d92a03bc-035f-447b-9ece-f279ed18f1a1",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=form:users:4:j_idt23",
+      "targets": [
+        ["id=form:users:4:j_idt23", "id"],
+        ["name=form:users:4:j_idt23", "name"],
+        ["css=#form\\3Ausers\\3A 4\\3Aj_idt23", "css:finder"],
+        ["xpath=//input[@id='form:users:4:j_idt23']", "xpath:attributes"],
+        ["xpath=//div[@id='form:users:4:j_idt21']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[3]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "a83787dc-63aa-49e0-ac44-bc89f9dd9256",
+      "comment": "",
+      "command": "click",
+      "target": "id=form:users:4:j_idt23",
+      "targets": [
+        ["id=form:users:4:j_idt23", "id"],
+        ["name=form:users:4:j_idt23", "name"],
+        ["css=#form\\3Ausers\\3A 4\\3Aj_idt23", "css:finder"],
+        ["xpath=//input[@id='form:users:4:j_idt23']", "xpath:attributes"],
+        ["xpath=//div[@id='form:users:4:j_idt21']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[3]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2dc2aa0a-e1b3-488c-8a24-7548edd3105c",
+      "comment": "",
+      "command": "click",
+      "target": "id=form:users:4:j_idt23",
+      "targets": [
+        ["id=form:users:4:j_idt23", "id"],
+        ["name=form:users:4:j_idt23", "name"],
+        ["css=#form\\3Ausers\\3A 4\\3Aj_idt23", "css:finder"],
+        ["xpath=//input[@id='form:users:4:j_idt23']", "xpath:attributes"],
+        ["xpath=//div[@id='form:users:4:j_idt21']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[3]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd70b318-8749-44f6-b145-28f7a307d2f1",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=form:users:4:j_idt23",
+      "targets": [
+        ["id=form:users:4:j_idt23", "id"],
+        ["name=form:users:4:j_idt23", "name"],
+        ["css=#form\\3Ausers\\3A 4\\3Aj_idt23", "css:finder"],
+        ["xpath=//input[@id='form:users:4:j_idt23']", "xpath:attributes"],
+        ["xpath=//div[@id='form:users:4:j_idt21']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[3]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "004f0489-9f64-4057-b482-dc2ca7f13045",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "id=form:users:4:j_idt23",
+      "targets": [
+        ["id=form:users:4:j_idt23", "id"],
+        ["name=form:users:4:j_idt23", "name"],
+        ["css=#form\\3Ausers\\3A 4\\3Aj_idt23", "css:finder"],
+        ["xpath=//input[@id='form:users:4:j_idt23']", "xpath:attributes"],
+        ["xpath=//div[@id='form:users:4:j_idt21']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[3]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a83d8dd6-286d-4fab-badf-e09b70cc11c5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ui-widget-content:nth-child(4) > .ui-editable-column:nth-child(3)",
+      "targets": [
+        ["css=.ui-widget-content:nth-child(4) > .ui-editable-column:nth-child(3)", "css:finder"],
+        ["xpath=//tbody[@id='form:users_data']/tr[4]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'bernhard.berger@uni-bremen.de')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1938a88f-13cd-4441-abe1-e616e7d25af3",
+      "comment": "",
+      "command": "click",
+      "target": "id=form:users:3:j_idt23",
+      "targets": [
+        ["id=form:users:3:j_idt23", "id"],
+        ["name=form:users:3:j_idt23", "name"],
+        ["css=#form\\3Ausers\\3A 3\\3Aj_idt23", "css:finder"],
+        ["xpath=//input[@id='form:users:3:j_idt23']", "xpath:attributes"],
+        ["xpath=//div[@id='form:users:3:j_idt21']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[3]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df662813-9672-4687-87f3-fe2df0eda6c9",
+      "comment": "",
+      "command": "click",
+      "target": "id=form:users:3:j_idt23",
+      "targets": [
+        ["id=form:users:3:j_idt23", "id"],
+        ["name=form:users:3:j_idt23", "name"],
+        ["css=#form\\3Ausers\\3A 3\\3Aj_idt23", "css:finder"],
+        ["xpath=//input[@id='form:users:3:j_idt23']", "xpath:attributes"],
+        ["xpath=//div[@id='form:users:3:j_idt21']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[3]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "662e2a79-d551-44ee-88e6-e3909dce7db1",
+      "comment": "",
+      "command": "click",
+      "target": "id=form:users:3:j_idt23",
+      "targets": [
+        ["id=form:users:3:j_idt23", "id"],
+        ["name=form:users:3:j_idt23", "name"],
+        ["css=#form\\3Ausers\\3A 3\\3Aj_idt23", "css:finder"],
+        ["xpath=//input[@id='form:users:3:j_idt23']", "xpath:attributes"],
+        ["xpath=//div[@id='form:users:3:j_idt21']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[3]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c98b153-7617-4104-9150-4426e39b39a6",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=form:users:3:j_idt23",
+      "targets": [
+        ["id=form:users:3:j_idt23", "id"],
+        ["name=form:users:3:j_idt23", "name"],
+        ["css=#form\\3Ausers\\3A 3\\3Aj_idt23", "css:finder"],
+        ["xpath=//input[@id='form:users:3:j_idt23']", "xpath:attributes"],
+        ["xpath=//div[@id='form:users:3:j_idt21']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[3]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4050caa-25e0-4fc8-b50b-309592e95239",
+      "comment": "",
+      "command": "click",
+      "target": "id=form:users:3:j_idt23",
+      "targets": [
+        ["id=form:users:3:j_idt23", "id"],
+        ["name=form:users:3:j_idt23", "name"],
+        ["css=#form\\3Ausers\\3A 3\\3Aj_idt23", "css:finder"],
+        ["xpath=//input[@id='form:users:3:j_idt23']", "xpath:attributes"],
+        ["xpath=//div[@id='form:users:3:j_idt21']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[3]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "89243e60-1f95-43c5-aa9d-9a91933009fc",
+      "comment": "",
+      "command": "type",
+      "target": "id=form:users:3:j_idt23",
+      "targets": [
+        ["id=form:users:3:j_idt23", "id"],
+        ["name=form:users:3:j_idt23", "name"],
+        ["css=#form\\3Ausers\\3A 3\\3Aj_idt23", "css:finder"],
+        ["xpath=//input[@id='form:users:3:j_idt23']", "xpath:attributes"],
+        ["xpath=//div[@id='form:users:3:j_idt21']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[3]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "hoelsch@uni-bremen.de"
+    }, {
+      "id": "77ac93ed-9c7a-4140-ae2c-345370a97b71",
+      "comment": "",
+      "command": "click",
+      "target": "id=form:users:4:j_idt23",
+      "targets": [
+        ["id=form:users:4:j_idt23", "id"],
+        ["name=form:users:4:j_idt23", "name"],
+        ["css=#form\\3Ausers\\3A 4\\3Aj_idt23", "css:finder"],
+        ["xpath=//input[@id='form:users:4:j_idt23']", "xpath:attributes"],
+        ["xpath=//div[@id='form:users:4:j_idt21']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[3]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0260449d-cca6-4403-b041-2b786e6de1f1",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=form:users:3:j_idt23",
+      "targets": [
+        ["id=form:users:3:j_idt23", "id"],
+        ["name=form:users:3:j_idt23", "name"],
+        ["css=#form\\3Ausers\\3A 3\\3Aj_idt23", "css:finder"],
+        ["xpath=//input[@id='form:users:3:j_idt23']", "xpath:attributes"],
+        ["xpath=//div[@id='form:users:3:j_idt21']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[3]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "b3973787-72c6-4c17-811d-3a68cbb2a358",
+      "comment": "",
+      "command": "click",
+      "target": "id=form:users:4:j_idt23",
+      "targets": [
+        ["id=form:users:4:j_idt23", "id"],
+        ["name=form:users:4:j_idt23", "name"],
+        ["css=#form\\3Ausers\\3A 4\\3Aj_idt23", "css:finder"],
+        ["xpath=//input[@id='form:users:4:j_idt23']", "xpath:attributes"],
+        ["xpath=//div[@id='form:users:4:j_idt21']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[3]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d847924-c1cb-4a99-8bc9-3bd8c9cdcd87",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=form:users:4:j_idt23",
+      "targets": [
+        ["id=form:users:4:j_idt23", "id"],
+        ["name=form:users:4:j_idt23", "name"],
+        ["css=#form\\3Ausers\\3A 4\\3Aj_idt23", "css:finder"],
+        ["xpath=//input[@id='form:users:4:j_idt23']", "xpath:attributes"],
+        ["xpath=//div[@id='form:users:4:j_idt21']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[3]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "e0911c54-e70d-46dd-a15c-c4351987fe71",
+      "comment": "",
+      "command": "type",
+      "target": "id=form:users:3:j_idt23",
+      "targets": [
+        ["id=form:users:3:j_idt23", "id"],
+        ["name=form:users:3:j_idt23", "name"],
+        ["css=#form\\3Ausers\\3A 3\\3Aj_idt23", "css:finder"],
+        ["xpath=//input[@id='form:users:3:j_idt23']", "xpath:attributes"],
+        ["xpath=//div[@id='form:users:3:j_idt21']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[3]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "hoelsch@uni-bremen.de"
+    }, {
+      "id": "8fffff65-80f8-47e7-a5a8-2dff6f594984",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=form:users:3:j_idt23",
+      "targets": [
+        ["id=form:users:3:j_idt23", "id"],
+        ["name=form:users:3:j_idt23", "name"],
+        ["css=#form\\3Ausers\\3A 3\\3Aj_idt23", "css:finder"],
+        ["xpath=//input[@id='form:users:3:j_idt23']", "xpath:attributes"],
+        ["xpath=//div[@id='form:users:3:j_idt21']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[3]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ESC}"
+    }, {
+      "id": "b47267eb-38a7-4ad7-bc52-fe07239fceab",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=form:users:4:j_idt23",
+      "targets": [
+        ["id=form:users:4:j_idt23", "id"],
+        ["name=form:users:4:j_idt23", "name"],
+        ["css=#form\\3Ausers\\3A 4\\3Aj_idt23", "css:finder"],
+        ["xpath=//input[@id='form:users:4:j_idt23']", "xpath:attributes"],
+        ["xpath=//div[@id='form:users:4:j_idt21']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[3]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ESC}"
+    }, {
+      "id": "7712b788-029c-494a-9a3e-b77bc9f7fff4",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=form:users:4:j_idt23",
+      "targets": [
+        ["id=form:users:4:j_idt23", "id"],
+        ["name=form:users:4:j_idt23", "name"],
+        ["css=#form\\3Ausers\\3A 4\\3Aj_idt23", "css:finder"],
+        ["xpath=//input[@id='form:users:4:j_idt23']", "xpath:attributes"],
+        ["xpath=//div[@id='form:users:4:j_idt21']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[3]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "s_cychgf@uni-bremen.de"
+    }, {
+      "id": "e7aaf9dc-9eac-4d3f-813e-ef58774cc130",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=form:users:3:j_idt23",
+      "targets": [
+        ["id=form:users:3:j_idt23", "id"],
+        ["name=form:users:3:j_idt23", "name"],
+        ["css=#form\\3Ausers\\3A 3\\3Aj_idt23", "css:finder"],
+        ["xpath=//input[@id='form:users:3:j_idt23']", "xpath:attributes"],
+        ["xpath=//div[@id='form:users:3:j_idt21']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[3]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "bernhard.berger@uni-bremen.de"
+    }, {
+      "id": "25b0f28e-2d4b-4155-a48b-7d909764f32e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#j_idt5\\3Aj_idt10 > .ui-button-text",
+      "targets": [
+        ["css=#j_idt5\\3Aj_idt10 > .ui-button-text", "css:finder"],
+        ["xpath=//button[@id='j_idt5:j_idt10']/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Abmelden')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0a404fc5-8749-4c81-ace2-ac3e5e117af7",
+    "name": "Test-Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3d24dd67-45b5-4c56-a22c-cccebd45802a", "2a471168-0965-4b43-a370-4269b7cc24c9"]
+  }],
+  "urls": ["http://localhost:8080/uebung5-1.0/login.xhtml"],
+  "plugins": []
+}

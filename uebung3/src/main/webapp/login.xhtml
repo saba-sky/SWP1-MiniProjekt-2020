@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+<h:head>
+    <title>Anmelden</title>
+</h:head>
+
+<h:body>
+    <h1>Login</h1>
+
+    <h:form>
+        <h:outputText value="E-Mail: "/>
+        <h:inputText label="email" value="#{loginBean.email}"/>
+
+        <h:outputText value="Password: "/>
+        <h:inputSecret value="#{loginBean.password}"/>
+
+        <h:commandButton
+                label="Absenden"
+                value="Anmelden"
+                action="#{loginBean.login}"/>
+    </h:form>
+</h:body>
+
+</html>

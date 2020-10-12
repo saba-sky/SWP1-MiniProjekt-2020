@@ -1,0 +1,47 @@
+[ {
+  "@id" : "1",
+  "firstName" : "Michael",
+  "lastName" : "Scott",
+  "motto" : "Progress, not perfection.",
+  "friends" : [ {
+    "@id" : "2",
+    "firstName" : "Pam",
+    "lastName" : "Beesly",
+    "motto" : "Your pain today will be your strength tomorrow.",
+    "friends" : [ {
+      "@ref" : "1"
+    }, {
+      "@id" : "3",
+      "firstName" : "Jim",
+      "lastName" : "Halpert",
+      "motto" : "Act or accept.",
+      "friends" : [ {
+        "@ref" : "1"
+      }, {
+        "@ref" : "2"
+      } ]
+    } ]
+  }, {
+    "@ref" : "3"
+  }, {
+    "@id" : "4",
+    "firstName" : "Ryan",
+    "lastName" : "Howard",
+    "motto" : "I am strong,\nI am confident,\nand I am unstoppable.",
+    "friends" : [ {
+      "@ref" : "4"
+    } ]
+  } ]
+}, {
+  "@id" : "5",
+  "firstName" : "Dwight",
+  "lastName" : "Schrute",
+  "motto" : "If you’re going through hell, keep going.",
+  "friends" : [ ]
+}, {
+  "@ref" : "2"
+}, {
+  "@ref" : "3"
+}, {
+  "@ref" : "4"
+} ]

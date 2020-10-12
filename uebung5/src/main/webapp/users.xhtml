@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <title>Übersicht aller Teilnehmer*innen</title>
+</h:head>
+<h:body>
+    <ui:composition template="WEB-INF/template.xhtml">
+        <ui:define name="content">
+            <h:form id="form">
+                <p:growl id="msgs" binding="#{usersBean.growl}" />
+                <p:dataTable value="#{usersBean.users}" var="u" id="users" paginator="true"
+                        rows="10" filteredValue="#{usersBean.filteredUsers}"
+                        editable="#{request.isUserInRole('LECTURER') || request.isUserInRole('TUTOR')}"
+                        editMode="cell">
+                    <p:ajax event="cellEditInit" listener="#{usersBean.onCellEditInit}" />
+                    <p:ajax event="cellEdit" listener="#{usersBean.onCellEdit}" update="form:msgs" />
+                    <p:ajax event="cellEditCancel" listener="#{usersBean.onCellEditCancel}" update="form:msgs" />
+
+                    <p:column width="20%" headerText="Vorname" sortBy="#{u.firstName}" filterBy="#{u.firstName}">
+                        <p:cellEditor>
+                            <f:facet name="output">
+                                <h:outputText value="#{u.firstName}" />
+                            </f:facet>
+                            <f:facet name="input">
+                                <p:inputText value="#{u.firstName}" style="width:100%"/>
+                            </f:facet>
+                        </p:cellEditor>
+                    </p:column>
+                    <p:column width="20%" headerText="Nachname" sortBy="#{u.lastName}" filterBy="#{u.lastName}">
+                        <p:cellEditor>
+                            <f:facet name="output">
+                                <h:outputText value="#{u.lastName}" />
+                            </f:facet>
+                            <f:facet name="input">
+                                <p:inputText value="#{u.lastName}" style="width:100%"/>
+                            </f:facet>
+                        </p:cellEditor>
+                    </p:column>
+                    <p:column width="30%" headerText="E-Mail" sortBy="#{u.email}" filterBy="#{u.email}">
+                        <p:cellEditor>
+                            <f:facet name="output">
+                                <h:outputText value="#{u.email}" />
+                            </f:facet>
+                            <f:facet name="input">
+                                <p:inputText value="#{u.email}" style="width:100%"/>
+                            </f:facet>
+                        </p:cellEditor>
+                    </p:column>
+                    <p:column style="text-align:center" rendered="#{request.isUserInRole('LECTURER')}">
+                        <p:commandButton value="Löschen"
+                                action="#{usersBean.delete(u)}"
+                                update="users"/>
+                    </p:column>
+                    <p:column style="text-align:center" rendered="#{request.isUserInRole('LECTURER') || request.isUserInRole('TUTOR')}">
+                        <p:button value="Ändern" outcome="user-edit.xhtml">
+                            <f:param name="id" value="#{u.id}"/>
+                        </p:button>
+                    </p:column>
+                </p:dataTable>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+</h:body>
+</html>
